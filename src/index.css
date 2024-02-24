@@ -1,0 +1,82 @@
+body{
+    background-color:rgb(46, 40, 40);
+}
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Added margin between buttons */
+  }
+  
+  .add-btn {
+    background-color: #1abc9c;
+    color: white;
+    font-size:1.5rem;
+  }
+  
+  .del-btn {
+    background-color: #e74c3c;
+    color: white;
+    font-size:1.5rem;
+  }
+  
+  .move-btn,
+  .down-btn {
+    background-color: #3498db;
+    color: white;
+    font-size:1.5rem;
+  }
+  
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    font-size:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .text {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    input[type="text"] {
+      width: calc(100% - 80px);
+    }
+  }
+  
